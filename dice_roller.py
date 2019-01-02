@@ -38,12 +38,21 @@ def d100():
     roll = random.randint(1, 100)
     return roll
 
-# d4 = random.randint(1, 4)
-# d6 = random.randint(1, 6)
-# d10 = random.randint(1, 10)
-# d12 = random.randint(1, 12)
-# d20 = random.randint(1, 20)
-# d100 = random.randint(1, 100)
+# example of a dictionary for dice
+#
+
+# import random
+#
+# diceDict = {'d4': random.randint(1, 4), 'd6': random.randint(1, 6), 'd10': random.randint(1, 10),
+#             'd12': random.randint(1, 12), 'd20': random.randint(1, 20), 'd100': random.randint(1, 100)}
+
+
+# * d4 = random.randint(1, 4)    #
+# * d6 = random.randint(1, 6)    #
+# * d10 = random.randint(1, 10)  #
+# * d12 = random.randint(1, 12)  #
+# * d20 = random.randint(1, 20)  #
+# * d100 = random.randint(1, 100)#
 
 
 roll_list = list()
@@ -54,7 +63,6 @@ dice_choice = input("Which dice would you like to roll?: ")
 if dice_choice == 'd6':
     while len(roll_list) <= 5:
         if input("Press enter to roll your dice, or q to quit: ") == 'q':
-            print("All finished. Your roll set is:")
             print(roll_list)
             break
         else:
