@@ -14,10 +14,10 @@ roll_tally = list()
 
 
 print("Welcome to the dice roller. You can roll d4, d6, d8, d10, d12, d20 or d100. \n"
-      "You may roll up to 6 times per set.")
+      "You may roll up to 10 times per set.")
 
 while len(roll_tally) <= 10:
-    choose_dice = input("Please choose a die to roll or type quit: ")
+    choose_dice = input("Please choose a die to roll or type quit if you are finished: ")
     if choose_dice == 'quit':
         break
     if choose_dice in dice_set:
