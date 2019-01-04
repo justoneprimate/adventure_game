@@ -22,7 +22,7 @@ while len(roll_tally) <= 10:
         break
     if choose_dice in dice_set:
         rolled_dice = dice_set.get(choose_dice)()
-        roll_tally.append((str(choose_dice) + ':' + str(rolled_dice)))
+        roll_tally.append((str(choose_dice) + ':-> ' + str(rolled_dice)))
         for roll in roll_tally:
             print(roll)
     else:
